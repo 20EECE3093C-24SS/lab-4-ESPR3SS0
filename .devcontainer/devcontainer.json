@@ -1,5 +1,5 @@
 {
-  "name": "Python 3.10 with Pandas Development Environment",
+  "name": "Python 3.10 with pytest",
   "build": {
       "context": "..",
       "dockerfile": "Dockerfile"
