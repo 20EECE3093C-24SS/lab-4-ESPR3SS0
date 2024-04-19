@@ -2,8 +2,11 @@ name: Doc Generation
 run-name: ${{ github.actor }} - Docs
 on:
   push:
-    tags:
-      - 'v*.*.*' 
+    # Tags was not working for me, unless I wanted to actually make a tag
+    #tags:
+    #  - 'v*.*.*' 
+    branches:
+      - main
 jobs:
   build-docs:
     runs-on: ubuntu-latest
